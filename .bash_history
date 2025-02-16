@@ -30,3 +30,14 @@ ls -l /var/www/html/flaskapp/flaskapp.wsgi
 sudo a2ensite flaskapp
 sudo systemctl restart apache2
 sudo reboot
+git --version
+sudo apt install git -y
+cd /var/www/html/flaskapp
+git init
+git add .
+git commit -m "Flask app for AWS EC2"
+git push -u origin main
+git remote add origin https://github.com/RamaKrishnamRajuAlluri/AWS
+git branch -M main
+git push -u origin main
+client_loop: send disconnect: Connection reset
